@@ -1,16 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
-
-import Layout from "@layout/layout"
-import SEO from "@components/seo"
-
+import Layout from "@layout"
+import SEO from "@components/Seo"
+import Scroller from "@components/Scroller"
 import About from '@modules/About'
 import Services from '@modules/Services'
 import Portfolio from '@modules/Portfolio'
 import CallToAction from '@modules/CallToAction'
 import Contact from '@modules/Contact'
-
-import Scroller from "@components/scroller"
 
 export const imageData = graphql`
   query {

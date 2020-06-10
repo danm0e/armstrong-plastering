@@ -1,5 +1,5 @@
 import React from 'react';
-import Scroller from "@components/scroller"
+import Scroller from "@components/Scroller"
 
 const About = () => (
 	<section className="page-section bg-primary" id="about">

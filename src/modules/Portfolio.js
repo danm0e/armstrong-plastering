@@ -1,7 +1,7 @@
 import React from 'react';
 import Img from "gatsby-image"
-import PortfolioModal from "@components/portfolio/modal"
-import PortfolioCarousel from "@components/portfolio/carousel"
+import Carousel from "@components/PortfolioCarousel"
+import Modal from "@components/PortfolioCarousel/Modal"
 
 const Portfolio = ({
 	handlePortfolioClick,
@@ -36,15 +36,15 @@ const Portfolio = ({
 				</div>
 			</section>
 
-			<PortfolioModal
+			<Modal
 				show={modalShow}
 				onHide={setModal}
 			>
-				<PortfolioCarousel
+				<Carousel
 					images={imgData}
 					current={modalCurrent}
 				/>
-			</PortfolioModal>
+			</Modal>
 		</>
 	);
 
