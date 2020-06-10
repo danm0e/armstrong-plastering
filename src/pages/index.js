@@ -1,16 +1,32 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../layout/layout"
-import SEO from "../components/seo"
+import Layout from "@layout/layout"
+import SEO from "@components/seo"
 
-import About from '../modules/About'
-import Services from '../modules/Services'
-import Portfolio from '../modules/Portfolio'
-import CallToAction from '../modules/CallToAction'
-import Contact from '../modules/Contact'
+import About from '@modules/About'
+import Services from '@modules/Services'
+import Portfolio from '@modules/Portfolio'
+import CallToAction from '@modules/CallToAction'
+import Contact from '@modules/Contact'
 
-import Scroller from "../components/scroller"
+import Scroller from "@components/scroller"
+
+export const imageData = graphql`
+  query {
+    images: allFile(filter: {relativePath: {glob: "portfolio/fullsize/*.jpg"}}, sort: {fields: name}) {
+      edges {
+        node {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default class IndexPage extends React.Component {
 	constructor(props) {
@@ -55,20 +71,3 @@ export default class IndexPage extends React.Component {
 		)
 	}
 }
-
-
-export const imageData = graphql`
-  query {
-    images: allFile(filter: {relativePath: {glob: "portfolio/fullsize/*.jpg"}}, sort: {fields: name}) {
-      edges {
-        node {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`

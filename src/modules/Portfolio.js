@@ -1,7 +1,7 @@
 import React from 'react';
 import Img from "gatsby-image"
-import PortfolioModal from "../components/portfolio/modal"
-import PortfolioCarousel from "../components/portfolio/carousel"
+import PortfolioModal from "@components/portfolio/modal"
+import PortfolioCarousel from "@components/portfolio/carousel"
 
 const Portfolio = ({
 	handlePortfolioClick,

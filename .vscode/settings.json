@@ -1,11 +1,10 @@
 {
-	"prettier.semi": false,
-	"editor.formatOnSave": true,
-	"prettier.jsxBracketSameLine": true,
-	"prettier.jsxSingleQuote": true,
-	"prettier.proseWrap": "always",
-	"prettier.requireConfig": true,
-	"prettier.singleQuote": true,
-	"prettier.useEditorConfig": false,
-	"prettier.useTabs": true
+  "editor.formatOnSave": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.useTabs": true,
+  "prettier.bracketSpacing": true,
+  "prettier.useEditorConfig": false,
+  "editor.tabSize": 2
 }
