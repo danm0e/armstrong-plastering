@@ -1,0 +1,11 @@
+{
+	"prettier.semi": false,
+	"editor.formatOnSave": true,
+	"prettier.jsxBracketSameLine": true,
+	"prettier.jsxSingleQuote": true,
+	"prettier.proseWrap": "always",
+	"prettier.requireConfig": true,
+	"prettier.singleQuote": true,
+	"prettier.useEditorConfig": false,
+	"prettier.useTabs": true
+}
