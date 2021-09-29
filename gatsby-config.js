@@ -1,9 +1,9 @@
 module.exports = {
-	pathPrefix: `/gatsby-creative`,
+	pathPrefix: `/armstrong-plastering`,
 	siteMetadata: {
-		title: `Gatsby Default Starter`,
-		description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-		author: `@gatsbyjs`,
+		title: `Armstrong Plastering and Decorating`,
+		description: `Professional plastering and decorating, Slough, London`,
+		author: `@thefullbyte`,
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
